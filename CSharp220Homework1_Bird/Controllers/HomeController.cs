@@ -1,8 +1,8 @@
-﻿using CSharp220Homework1_Bird.Models;
+﻿using Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace CSharp220Homework1_Bird.Controllers
+namespace Controllers
 {
     public class HomeController : Controller
     {
@@ -14,11 +14,6 @@ namespace CSharp220Homework1_Bird.Controllers
         }
 
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
         {
             return View();
         }
@@ -41,12 +36,6 @@ namespace CSharp220Homework1_Bird.Controllers
         public IActionResult BirthdayCardConfirmation()
         {
             return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CSharp220Homework1_Bird.Models
+namespace Models
 {
     public class BirthdayCard
     {
